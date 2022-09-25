@@ -1,0 +1,196 @@
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'),
+  url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
+  url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+}
+*{
+  box-sizing:border-box;
+}
+body{
+  background:#EAE8FE;
+} 
+.container{
+  /* width:748px */
+  width:47rem;
+  height:52.5rem;
+  background:yellow;
+  margin:0 auto;
+}
+.vm-header{
+ background:blue;
+ width:386px;
+ margin:0 auto;
+}
+.header-logo{
+ width:386px;
+  height:164px;
+}
+.vm-content{
+  background:white;
+  margin-top:67px;
+  display:flex;
+}
+.content-first-section{
+  /* width:360px, 47% */
+  background:green;
+  width:360px;
+  height:545px;
+  margin-right:28px;
+  padding:30px 26px 0 26px;
+}
+.cola-list{
+  background:pink;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  grid-template-rows:repeat(2,1fr);
+  place-items: center;
+  gap:12px;
+  list-style:none;
+}
+.cola-list li button{
+  background:white;
+  border:3px solid #6327FE;
+  border-radius:10px;
+  width:94px;
+  height:130px;
+}
+.cola-list img{
+  width:36px;
+  height:65px;
+}
+.cola-name{
+  display:block;
+  margin-bottom:7px;
+  font-size:9px;
+  font-weight:500;
+  line-height:13px;
+}
+.cola-price{
+  background:#6327FE;
+  border-radius:50px;
+  padding:5px 15px;
+  font-size:12px;
+  font-weight:500;
+  color:white;
+  margin-bottom:9px;
+}
+.cola-money-wrapper{
+  margin-top:19px;
+}
+.cola-balance{
+  display:flex;
+  gap:12px;
+}
+.cola-balance>p{
+  flex-grow:1;
+  padding:6px 10px;
+  background: #EAE8FE;
+  border-radius:5px;
+  height:33px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size:14px;
+  line-height:20px;
+  font-weight:500;
+}
+.cola-balance>button,
+.cola-deposit>button{
+  width:94px;
+  height:32px;
+  background:#ffffff;
+  font-size:13px;
+  line-height:19px;
+  font-weight:500;
+  border-radius: 5px;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
+}
+.cola-deposit{
+  margin-top:11px;
+  display:flex;
+  gap:12px;
+}
+.cola-deposit input{
+  flex-grow:1;
+  height:33px;
+  border-radius:5px;
+  border: 1px solid #BDBDBD;
+}
+.cola-selection{
+  margin-top:12px;
+  display:flex;
+  gap:12px;
+}
+.selection-wrapper{
+  background:skyblue;
+  flex-grow:1;
+  height:106px;
+  background: #EAE8FE;
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
+  overflow:hidden;
+  overflow: auto;
+}
+/* scrolbar */
+.selection-wrapper::-webkit-scrollbar {
+  width: 10px;
+}
+
+.selection-wrapper::-webkit-scrollbar-thumb {
+  height: 10%;
+  background: #fff;
+  background-clip: padding-box;
+  border: 3px solid transparent;
+  border-radius: 50px;
+}
+
+.selection-wrapper::-webkit-scrollbar-track {
+  margin: 2px auto;
+}
+
+.selected-cola-list{
+  width:170px;
+  height:46px;
+  background:white;
+  margin:12px auto 6px auto;
+  border-radius: 5px;
+  display:flex;
+  align-items:center;
+}
+.selected-cola-list>img{
+  width:18px;
+  height:33px;
+  margin-left:10px;
+}
+.selected-cola-name{
+  display:block;
+  flex-basis:73px;
+  font-size:9px;
+  margin:0 21px 0 10px;
+}
+.selected-cola-quantity{
+  font-size:14px;
+  font-weight:500;
+  line-height:20px;
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
+  padding:3px 10px 5px 10px;
+  margin-right:8px;
+}
+.cola-selection>button{
+  width:30%;
+  background: #6327FE;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  color:#ffffff;
+  font-size:13px;
+  font-weight:700;
+  line-height:19px;
+}
+.content-second-section{
+  background:purple;
+  width:360px;
+}
